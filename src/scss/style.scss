@@ -1,0 +1,39 @@
+// npx node-sass src/scss/style.scss src/styles.css --output-style compressed
+
+@import "utils";
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html, body {
+	max-width: 100vw;
+	height: 100vh;
+}
+
+body {
+	display: flex; /* allows app-root to have the same dimensions  */
+}
+
+app-root {
+	width: 100%;
+	height: 100%;
+	background: url("./assets/img/reservoir-canyon.jpg") center / cover no-repeat;
+	font-family: var(--font-family-sansserif);
+
+	#main-container {
+		width: 100%;
+		height: 100%;
+		display:  grid;
+		grid-template-rows: auto 1fr auto;
+	}
+}
+
+@import "date";
+@import "calculator/main";
+@import "theme-selector";
+@import "media";

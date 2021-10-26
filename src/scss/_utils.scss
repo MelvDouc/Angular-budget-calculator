@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@400;700&family=Open+Sans:wght@400;700&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css");
+
+:root {
+	--font-family-sansserif: 'Open Sans', Verdana, Arial, Tahoma, sans-serif;
+	--font-family-monospace: 'Anonymous Pro', Consolas, 'Courier New', monospace;
+	/* Default Dark Theme */
+	--form-text-clr: lime;
+	--form-bg-clr: 51, 51, 51;
+	--form-border-clr: black;
+	--reset-btn-text-clr: rgb(var(--form-bg-clr));
+	--reset-btn-bg-clr: rgb(248, 248, 255);
+	--reset-btn-bg-clr-hover: var(--form-border-clr);
+	--reset-btn-border-clr: var(--reset-btn-bg-clr);
+	--reset-btn-border-clr-hover: var(--form-border-clr);
+	--budget-clr: rgb(255, 230, 0);
+}
+
+.light-theme {
+	--form-text-clr: blue;
+	--form-bg-clr: 255, 255, 255;
+	--form-border-clr: var(--form-text-clr);
+	--reset-btn-text-clr: white;
+	--reset-btn-bg-clr: var(--form-text-clr);
+	--reset-btn-bg-clr-hover: rgb(var(--form-bg-clr));
+	--reset-btn-border-clr: var(--form-text-clr);
+	--reset-btn-border-clr-hover: var(--form-text-clr);
+	--budget-clr: red;
+}

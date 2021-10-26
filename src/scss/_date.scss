@@ -1,0 +1,17 @@
+#date {
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-start;
+
+	div {
+		--opacity: .775;
+		--bg-clr: 255, 255, 255;
+		background: rgba(var(--bg-clr), var(--opacity));
+		padding: .75em;
+		font-weight: bold;
+
+		&:hover {
+			--opacity: 1;
+		}
+	}
+}

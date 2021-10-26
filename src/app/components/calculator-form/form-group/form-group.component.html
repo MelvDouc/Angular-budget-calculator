@@ -1,0 +1,9 @@
+<label for="{{ id }}">{{ labelText }}</label>
+<input
+  type="number"
+  id="{{ id }}"
+  min="{{ min }}"
+  max="{{ max }}"
+  [(ngModel)]="value"
+  (keyup)="onKeyup($event)"
+>

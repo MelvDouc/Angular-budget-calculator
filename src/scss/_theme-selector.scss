@@ -1,0 +1,14 @@
+#theme {
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-end;
+  padding: .2em;
+
+  select {
+    all: unset;
+    font-family: inherit;
+    background-color: white;
+    padding: .15em;
+    text-align: center;
+  }
+}

@@ -1,0 +1,34 @@
+#form-groups {
+	display: grid;
+	grid-template-rows: repeat(4, 1fr);
+	row-gap: .75em;
+
+	app-form-group {
+		display: grid;
+		align-items: center;
+		grid-template-columns: 5fr 1fr;
+		column-gap: 1em;
+
+		label {
+			color: var(--form-text-clr);
+		}
+
+		input {
+			font-family: var(--font-family-monospace);
+			font-size: 1em;
+			width: 3.25em;
+			padding: .1em .2em;
+			text-align: end;
+
+			&::-webkit-outer-spin-button,
+			&::-webkit-inner-spin-button {
+			 	-webkit-appearance: none;
+			 	margin: 0;
+			}
+
+			&[type="number"] {
+				-moz-appearance: textfield;
+			}
+		}
+	}
+}

@@ -1,0 +1,12 @@
+<div id="form-groups">
+  <app-form-group
+    *ngFor="let key of optionKeys"
+    [id]="key"
+    [labelText]="budgetOptions[key].labelText"
+    [min]="budgetOptions[key].min"
+    [max]="budgetOptions[key].max"
+    [value]="budgetOptions[key].value"
+    (keyupHandler)="setOption($event, key)"
+  ></app-form-group>
+</div>
+<app-reset-button (onReset)="handleClick()"></app-reset-button>

@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'angular-budget-calculator';
+  title = "Calcul de budget journalier";
+  public isLightTheme = false;
+
+  public toggleTheme(e: any) {
+    this.isLightTheme = e === "light";
+  }
 }

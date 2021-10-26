@@ -1,0 +1,13 @@
+app-budget-display {
+	color: var(--form-text-clr);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	span:nth-child(2) {
+		font-weight: bold;
+    color: var(--budget-clr);
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 10px;
+	}
+}

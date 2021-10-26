@@ -1,0 +1,24 @@
+#calculator {
+	--form-padding: .75rem;
+	display: grid;
+	place-items: center;
+	font-size: 1.05rem;
+	padding: .8em;
+
+	.container {
+		display: flex;
+		flex-direction: column;
+		row-gap: 1em;
+	}
+	
+	app-calculator-form, app-budget-display {
+		background: rgba(var(--form-bg-clr), .945);
+		border: 1px solid var(--form-border-clr);
+		border-radius: 5px;
+		padding: var(--form-padding);
+	}
+	
+	@import "form-groups";
+	@import "reset-button";
+	@import "budget-display";
+}
